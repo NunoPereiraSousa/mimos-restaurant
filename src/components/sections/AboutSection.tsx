@@ -1,4 +1,4 @@
-import chicken from "@/assets/mimos/gallery-5.jpg";
+import grillPlatter from "@/assets/mimos/uber-grill-platter.jpg";
 import { Container, Eyebrow } from "@/components/shared";
 
 const details = [
@@ -15,8 +15,8 @@ export function AboutSection() {
         <div className="grid min-w-0 items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-20 2xl:gap-28">
           <figure className="image-wrap min-w-0 aspect-[4/3] lg:aspect-[5/4]">
             <img
-              src={chicken}
-              alt="Frango de churrasco a ser preparado na grelha do Mimo’s"
+              src={grillPlatter}
+              alt="Seleção de carnes grelhadas preparada pelo Mimo’s"
               className="h-full w-full object-cover"
             />
           </figure>

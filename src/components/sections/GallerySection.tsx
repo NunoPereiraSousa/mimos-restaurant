@@ -1,9 +1,9 @@
 import francesinha from "@/assets/mimos/uber-francesinha.webp";
 import grillPlatter from "@/assets/mimos/uber-grill-platter.jpg";
-import pizzaHam from "@/assets/mimos/uber-pizza-ham.webp";
-import pizzaPepperoni from "@/assets/mimos/uber-pizza-pepperoni.webp";
-import pizzaVegetable from "@/assets/mimos/uber-pizza-vegetable.webp";
 import pizza from "@/assets/mimos/uber-pizza.webp";
+import preparedDish from "@/assets/mimos/gallery-1.jpg";
+import breadedDish from "@/assets/mimos/gallery-2.jpg";
+import ovenDish from "@/assets/mimos/gallery-4.jpg";
 import { Container, Eyebrow } from "@/components/shared";
 
 const images = [
@@ -23,18 +23,18 @@ const images = [
     className: "md:col-span-5",
   },
   {
-    src: pizzaHam,
-    alt: "Pizza de fiambre e cogumelos do menu Uber Eats do Mimo’s",
+    src: preparedDish,
+    alt: "Prato de carne com batata e legumes preparado pelo Mimo’s",
     className: "md:col-span-4",
   },
   {
-    src: pizzaPepperoni,
-    alt: "Pizza de pepperoni do menu Uber Eats do Mimo’s",
+    src: breadedDish,
+    alt: "Prato preparado na cozinha do Mimo’s",
     className: "md:col-span-4",
   },
   {
-    src: pizzaVegetable,
-    alt: "Pizza de legumes do menu Uber Eats do Mimo’s",
+    src: ovenDish,
+    alt: "Especialidade de forno preparada pelo Mimo’s",
     className: "md:col-span-4",
   },
 ];
@@ -66,7 +66,7 @@ export function GallerySection() {
                 src={image.src}
                 alt={image.alt}
                 loading="lazy"
-                className="h-full min-w-0 max-w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                className="block h-full w-full min-w-0 object-cover transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </figure>
           ))}
